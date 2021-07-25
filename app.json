@@ -16,6 +16,6 @@
     "GITTERBOT_IRC_SERVER": "irc.freenode.net",
     "GITTERBOT_IRC_ADMIN": "<your irc handle>",
     "GITTERBOT_IRC_OPTS": "{}",
-    "HEROKU_URL": "http://<appname>.herokuapp.com"
+    "HEROKU_URL": "https://<appname>.herokuapp.com"
   }
 }
