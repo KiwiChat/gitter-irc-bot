@@ -43,4 +43,15 @@ if (herokuURL) {
   }, 5 * 60 * 1000)
 }
 
+var vercelURL = process.env.VERCEL_URL
+if (vercelURL) {
+  var request = require('request')
+  require('http').createServer(function (req, res) {
+    res.end('ping vercel\n')
+  }).listen(process.env.PORT)
+  setInterval(function () {
+    request(vercelURL).pipe(process.stdout)
+  }, 5 * 60 * 1000)
+}
+
 gitterBot(opts)
